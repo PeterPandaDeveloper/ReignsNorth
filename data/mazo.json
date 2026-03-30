@@ -499,8 +499,271 @@
       }
     }
   ],
-  "eventos_acro": [],
-  "desastres_mayores": [],
+  "eventos_acro": [{
+      "id": "acro_1",
+      "personaje": "Acro",
+      "texto": "Hermano, Sherlok Murik II ha masacrado tres aldeas mayores en Crisol. Sus elefantes se acercan a nuestras fronteras del sur. Debemos prepararnos.",
+      "opcion_1": {
+        "texto": "Imponer reclutamiento masivo.",
+        "efecto": {"e": 20, "t": 0, "p": -15, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Convocar defensas aliadas.",
+        "efecto": {"e": 15, "t": -10, "p": 0, "c": -15}
+      }
+    },
+    {
+      "id": "acro_2",
+      "personaje": "Acro",
+      "texto": "El bajo mundo está bajo nuestras narices, he descubierto a los responsables. El contrabando de Hylara y la forja ilegal de Nayen están mermando nuestros impuestos.",
+      "opcion_1": {
+        "texto": "Exponerlos a la luz.",
+        "efecto": {"e": 0, "t": -15, "p": 15, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Que operen, pero con discreción.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": -15}
+      }
+    },
+    {
+      "id": "acro_3",
+      "personaje": "Acro",
+      "texto": "Zacarías, la piratería en el Litoral en Espiral está fuera de control. La Capitana Eura está hundiendo nuestros barcos mercantes.",
+      "opcion_1": {
+        "texto": "Desplegar una armada punitiva.",
+        "efecto": {"e": -15, "t": 0, "p": 15, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Cerrar los puertos hasta nuevo aviso.",
+        "efecto": {"e": -10, "t": -15, "p": 0, "c": -15}
+      }
+    },
+    {
+      "id": "acro_4",
+      "personaje": "Acro",
+      "texto": "Los detractores de El Exilio están cavando pozos cerca de nuestras rutas comerciales de arena. El Patriarca Oram nos está desafiando.",
+      "opcion_1": {
+        "texto": "Enviar tropas a destruir los pozos.",
+        "efecto": {"e": -10, "t": 0, "p": 0, "c": -15}
+      },
+      "opcion_2": {
+        "texto": "Cobrarles un peaje por el agua.",
+        "efecto": {"e": 0, "t": 15, "p": -10, "c": 0}
+      }
+    },
+    {
+      "id": "acro_5",
+      "personaje": "Acro",
+      "texto": "La Cueva de Cristal está acaparando todo el mercado de vidrio y herramientas finas. Nuestra economía depende demasiado de ellos.",
+      "opcion_1": {
+        "texto": "Subsidiar a nuestros herreros locales.",
+        "efecto": {"e": 0, "t": -15, "p": 10, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Imponer aranceles al cristal extranjero.",
+        "efecto": {"e": 0, "t": 15, "p": 0, "c": -20}
+      }
+    },
+    {
+      "id": "acro_6",
+      "personaje": "Acro",
+      "texto": "Las raciones son cortas este año. Si no invertimos fuertemente en la Granja Vignoble, el pueblo de North pasará hambre en invierno.",
+      "opcion_1": {
+        "texto": "Comprar todas las cosechas a Vignoble.",
+        "efecto": {"e": 0, "t": -20, "p": 20, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Racionar la comida en North.",
+        "efecto": {"e": 0, "t": 0, "p": -20, "c": 0}
+      }
+    },
+    {
+      "id": "acro_7",
+      "personaje": "Acro",
+      "texto": "Nuestros espías hablan de individuos con capuchas moradas realizando... trucos imposibles cerca de las montañas. No me fío de ellos.",
+      "opcion_1": {
+        "texto": "Ofrece una recompensa por sus cabezas.",
+        "efecto": {"e": 0, "t": -10, "p": -10, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "No creas en cuentos de hadas, Acro.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": -10}
+      }
+    },
+    {
+      "id": "acro_8",
+      "personaje": "Acro",
+      "texto": "Los vigías reportan extrañas luces antinaturales en el Macizo de la Sombra. Creen que los Tres Ermitaños están alterando la roca madre por pura diversión. ¿Investigamos?",
+      "opcion_1": {
+        "texto": "Financiar una expedición armada.",
+        "efecto": {"e": -10, "t": -15, "p": 0, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Prohibir a cualquiera acercarse a esa zona.",
+        "efecto": {"e": 0, "t": 0, "p": -10, "c": 0}
+      }
+    }],
+  "desastres_mayores": ["desastres_mayores": [
+    {
+      "id": "des_1",
+      "personaje": "Acro",
+      "texto": "¡Alarma, Rey Zacarías! La flota pirata de las Algas Verdes ha tomado por sorpresa la Sociedad Pescadora Romster. Se acercan por el río.",
+      "opcion_1": {
+        "texto": "Enviar al ejército a la costa.",
+        "efecto": {"e": -30, "t": -20, "p": 0, "c": 10}
+      },
+      "opcion_2": {
+        "texto": "Que Anyara lidere la defensa.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "activar_resolucion_anyara"}
+      }
+    },
+    {
+      "id": "des_2",
+      "personaje": "Acro",
+      "texto": "Una enfermedad terrible traída de los pantanos está matando a cientos de ciudadanos en los distritos bajos. Se propaga muy rápido.",
+      "opcion_1": {
+        "texto": "Quemar los distritos infectados.",
+        "efecto": {"e": 0, "t": 0, "p": -35, "c": -10}
+      },
+      "opcion_2": {
+        "texto": "Que Silas vaya con sus antídotos.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "activar_resolucion_silas"}
+      }
+    },
+    {
+      "id": "des_3",
+      "personaje": "Acro",
+      "texto": "El invierno es brutal este año. Las forjas se han apagado por la tormenta y no podemos fabricar armas ni estufas para el pueblo.",
+      "opcion_1": {
+        "texto": "Confiscar madera del pueblo.",
+        "efecto": {"e": 15, "t": 0, "p": -30, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Que Kaelon use fuego de cristal.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "activar_resolucion_kaelon"}
+      }
+    },
+    {
+      "id": "des_4",
+      "personaje": "Acro",
+      "texto": "Un fuerte temblor ha colapsado la sección sur de las murallas de North. Estamos completamente expuestos a cualquier ataque.",
+      "opcion_1": {
+        "texto": "Tesorería a reparaciones rápidas.",
+        "efecto": {"e": 0, "t": -35, "p": -10, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Que LLeah Klar dirija la obra.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "activar_resolucion_lleah"}
+      }
+    }
+  ],
+
+  "resoluciones_aves": [
+    {
+      "id": "res_anyara_exito",
+      "personaje": "Cuervo blanco",
+      "texto": "(Sello de ancla). La operación de Anyara fue un éxito absoluto. Ha aplastado a la flota pirata y asegura nuestras aguas. Retorna a North triunfante.",
+      "opcion_1": {
+        "texto": "Nuestra capitana es invencible.",
+        "efecto": {"e": 0, "t": 10, "p": 10, "c": 15}
+      },
+      "opcion_2": {
+        "texto": "El río vuelve a ser nuestro.",
+        "efecto": {"e": 0, "t": 10, "p": 10, "c": 15}
+      }
+    },
+    {
+      "id": "res_anyara_fracaso",
+      "personaje": "Halcón",
+      "texto": "(El halcón aterriza herido). La nave insignia de Anyara fue emboscada y hundida en la niebla. La red ha caído. Ella no retornará.",
+      "opcion_1": {
+        "texto": "Que el mar la guarde.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "muere_anyara"}
+      },
+      "opcion_2": {
+        "texto": "Una pérdida terrible.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "muere_anyara"}
+      }
+    },
+    {
+      "id": "res_silas_exito",
+      "personaje": "Cuervo blanco",
+      "texto": "(Olor a amapola). El Maestre Silas ha erradicado la fiebre azul con sus destilados. Los distritos están a salvo y él retorna al castillo.",
+      "opcion_1": {
+        "texto": "Su medicina nos ha salvado.",
+        "efecto": {"e": 0, "t": 0, "p": 20, "c": 10}
+      },
+      "opcion_2": {
+        "texto": "Gran trabajo, Maestre.",
+        "efecto": {"e": 0, "t": 0, "p": 20, "c": 10}
+      }
+    },
+    {
+      "id": "res_silas_fracaso",
+      "personaje": "Halcón",
+      "texto": "(Retazo de toga negra). El Maestre Silas contrajo la cepa más violenta de la fiebre mientras trataba a los enfermos. Ha fallecido en cuarentena.",
+      "opcion_1": {
+        "texto": "Murió cumpliendo su deber.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "muere_silas"}
+      },
+      "opcion_2": {
+        "texto": "Un mártir de North.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "muere_silas"}
+      }
+    },
+    {
+      "id": "res_kaelon_exito",
+      "personaje": "Cuervo blanco",
+      "texto": "(Prisma brillante). Kaelon logró estabilizar el fuego de cristal y reencender las forjas maestras. Retorna a la corte con el problema resuelto.",
+      "opcion_1": {
+        "texto": "Su intelecto no tiene rival.",
+        "efecto": {"e": 15, "t": 10, "p": 0, "c": 10}
+      },
+      "opcion_2": {
+        "texto": "Excelente, el reino se calienta.",
+        "efecto": {"e": 15, "t": 10, "p": 0, "c": 10}
+      }
+    },
+    {
+      "id": "res_kaelon_fracaso",
+      "personaje": "Halcón",
+      "texto": "(Cristal roto y ennegrecido). El cristal de fuego era inestable y provocó una explosión masiva en la hojalatería. Kaelon no sobrevivió a la detonación.",
+      "opcion_1": {
+        "texto": "Una mente brillante apagada.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "muere_kaelon"}
+      },
+      "opcion_2": {
+        "texto": "Trágico accidente.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "muere_kaelon"}
+      }
+    },
+    {
+      "id": "res_lleah_exito",
+      "personaje": "Cuervo blanco",
+      "texto": "(Trozo de hierro). LLeah Klar usó vigas de acero pesado para estabilizar la muralla en tiempo récord. El muro es impenetrable y él retorna a su yunque.",
+      "opcion_1": {
+        "texto": "El acero de North no se quiebra.",
+        "efecto": {"e": 15, "t": 0, "p": 10, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Nuestras defensas son sólidas.",
+        "efecto": {"e": 15, "t": 0, "p": 10, "c": 0}
+      }
+    },
+    {
+      "id": "res_lleah_fracaso",
+      "personaje": "Halcón",
+      "texto": "(Martillo abollado). Una fuerte réplica del terremoto desestabilizó la zanja. LLeah Klar quedó sepultado bajo roca defendiendo a sus obreros.",
+      "opcion_1": {
+        "texto": "Que la tierra forje su alma.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "muere_lleah"}
+      },
+      "opcion_2": {
+        "texto": "Un herrero heroico.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "muere_lleah"}
+      }
+    }
+  ],],
   "resoluciones_aves": [],
   "eventos_aves": [],
   "visitas_aliados": [],
