@@ -603,7 +603,7 @@
         "efecto": {"e": 0, "t": 0, "p": -10, "c": 0}
       }
     }],
-  "desastres_mayores": ["desastres_mayores": [
+  "desastres_mayores": [
     {
       "id": "des_1",
       "personaje": "Acro",
@@ -763,12 +763,1472 @@
         "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "muere_lleah"}
       }
     }
-  ],],
-  "resoluciones_aves": [],
-  "eventos_aves": [],
-  "visitas_aliados": [],
-  "eventos_consejo": [],
-  "arcos_principes": [],
-  "eventos_discipulos": [],
-  "secuencias_finales": []
+  ],
+"eventos_aves": [
+    {
+      "id": "ave_1",
+      "personaje": "Cuervo",
+      "texto": "El cuervo trae un pergamino oficial: 'Rey Zacarías, el reino de Rornster solicita ayuda financiera urgente para reparar sus muelles navales'.",
+      "opcion_1": {
+        "texto": "Enviar el oro de ayuda (?)",
+        "efecto": {"e": 0, "t": -15, "p": 0, "c": 20},
+        "prob_exito": 20,
+        "efecto_fracaso": {"e": 0, "t": -20, "p": 0, "c": -10}
+      },
+      "opcion_2": {
+        "texto": "Es un fraude, a la basura.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0}
+      }
+    },
+    {
+      "id": "ave_2",
+      "personaje": "Cuervo",
+      "texto": "Un cuervo desgastado aterriza con una nota: 'Padre, soy el Príncipe Jinn. Envíame mil bloques de oro para mis estudios arcanos en la capital'.",
+      "opcion_1": {
+        "texto": "Enviar el oro a mi hijo (?)",
+        "efecto": {"e": 0, "t": -20, "p": 0, "c": 15},
+        "prob_exito": 10,
+        "efecto_fracaso": {"e": 0, "t": -25, "p": 0, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Arresten al mensajero.",
+        "efecto": {"e": 10, "t": 0, "p": 0, "c": 0}
+      }
+    },
+    {
+      "id": "ave_3",
+      "personaje": "Cuervo",
+      "texto": "El cuervo negro trae noticias lejanas: 'Una tormenta de arena ha descubierto unas ruinas en El Exilio. Nuestros excavadores están atrapados'.",
+      "opcion_1": {
+        "texto": "Financiar rescate armado (?)",
+        "efecto": {"e": 0, "t": 25, "p": 0, "c": 15},
+        "prob_exito": 50,
+        "efecto_fracaso": {"e": -20, "t": -15, "p": -10, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Que los dioses los guarden.",
+        "efecto": {"e": 0, "t": 0, "p": -10, "c": -15}
+      }
+    },
+    {
+      "id": "ave_4",
+      "personaje": "Cuervo",
+      "texto": "El cuervo de la Cueva de Cristal propone un intercambio: enviar a nuestros mejores forjadores a enseñarles a trabajar el acero, a cambio de oro.",
+      "opcion_1": {
+        "texto": "Aceptar el trato (?)",
+        "efecto": {"e": 0, "t": 20, "p": 0, "c": 15},
+        "prob_exito": 60,
+        "efecto_fracaso": {"e": -10, "t": 0, "p": 0, "c": -20}
+      },
+      "opcion_2": {
+        "texto": "Nuestros secretos se quedan.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": -10}
+      }
+    },
+    {
+      "id": "ave_5",
+      "personaje": "Paloma",
+      "texto": "Una paloma blanca trae un collar de perlas negras y una nota: 'Haga la vista gorda con los barcos sin bandera en el río esta noche'.",
+      "opcion_1": {
+        "texto": "Tomarlas y retirar guardia (?)",
+        "efecto": {"e": -10, "t": 30, "p": 0, "c": -10},
+        "prob_exito": 70,
+        "efecto_fracaso": {"e": 0, "t": 15, "p": -30, "c": -20}
+      },
+      "opcion_2": {
+        "texto": "Rechazarlo y reforzar río.",
+        "efecto": {"e": 15, "t": -10, "p": 10, "c": 0}
+      }
+    },
+    {
+      "id": "ave_6",
+      "personaje": "Paloma",
+      "texto": "La paloma trae un frasco de perfume exquisito y una carta sin firma: 'Para el rey más majestuoso. Úselo en la corte hoy'.",
+      "opcion_1": {
+        "texto": "Usarlo en el Consejo (?)",
+        "efecto": {"e": 0, "t": 10, "p": 0, "c": 20},
+        "prob_exito": 50,
+        "efecto_fracaso": {"e": 0, "t": 0, "p": -10, "c": -20}
+      },
+      "opcion_2": {
+        "texto": "Dárselo a los cerdos.",
+        "efecto": {"e": 0, "t": 0, "p": 10, "c": 0}
+      }
+    },
+    {
+      "id": "ave_7",
+      "personaje": "Paloma",
+      "texto": "La paloma trae un anillo de oro macizo: 'Apuñale por la espalda al Gremio de Mercaderes subiendo impuestos, y le daré parte de mis ganancias'.",
+      "opcion_1": {
+        "texto": "Aceptar el trato oscuro (?)",
+        "efecto": {"e": 0, "t": 35, "p": -10, "c": -15},
+        "prob_exito": 60,
+        "efecto_fracaso": {"e": -15, "t": -10, "p": -25, "c": -20}
+      },
+      "opcion_2": {
+        "texto": "Exponerlo al Gremio.",
+        "efecto": {"e": 0, "t": -10, "p": 10, "c": 20}
+      }
+    },
+    {
+      "id": "ave_8",
+      "personaje": "Paloma",
+      "texto": "Una paloma mensajera llega exhausta con una semilla azul brillante: 'Plante esto en los jardines reales, majestad, y verá la gloria'.",
+      "opcion_1": {
+        "texto": "Plantarla en el jardín (?)",
+        "efecto": {"e": 0, "t": 0, "p": 25, "c": 10},
+        "prob_exito": 40,
+        "efecto_fracaso": {"e": 0, "t": -20, "p": -10, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Quemar la semilla extranjera.",
+        "efecto": {"e": 0, "t": 0, "p": -10, "c": 10}
+      }
+    },
+    {
+      "id": "ave_9",
+      "personaje": "Halcón",
+      "texto": "Un halcón de Crisol aterriza ensangrentado. La nota dice: 'Ríndanse o sus cabezas adornarán nuestros elefantes de guerra. - Sherlok'.",
+      "opcion_1": {
+        "texto": "Lanzar ataque preventivo (?)",
+        "efecto": {"e": 25, "t": 0, "p": 15, "c": -10},
+        "prob_exito": 40,
+        "efecto_fracaso": {"e": -30, "t": -15, "p": -15, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Atrincherarse y esperar.",
+        "efecto": {"e": 15, "t": -15, "p": -10, "c": 0}
+      }
+    },
+    {
+      "id": "ave_10",
+      "personaje": "Halcón",
+      "texto": "Tus arqueros derribaron un halcón enemigo. Lleva las coordenadas de un campamento mercenario oculto cerca de la Granja Vignoble.",
+      "opcion_1": {
+        "texto": "Atacar campamento hoy (?)",
+        "efecto": {"e": 15, "t": 20, "p": 10, "c": 0},
+        "prob_exito": 70,
+        "efecto_fracaso": {"e": -25, "t": 0, "p": -10, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Reforzar la Granja, no arriesgar.",
+        "efecto": {"e": 10, "t": -10, "p": 15, "c": 0}
+      }
+    },
+    {
+      "id": "ave_11",
+      "personaje": "Halcón",
+      "texto": "Un halcón de cetrería trae un ultimátum del Bajo Mundo: 'Retire a sus guardias de los callejones sur, o la pólvora hablará por nosotros'.",
+      "opcion_1": {
+        "texto": "Incursión para aplastarlos (?)",
+        "efecto": {"e": 10, "t": 20, "p": -10, "c": 10},
+        "prob_exito": 50,
+        "efecto_fracaso": {"e": -20, "t": -20, "p": -25, "c": -15}
+      },
+      "opcion_2": {
+        "texto": "Negociar tregua en sombras.",
+        "efecto": {"e": -10, "t": 0, "p": 15, "c": -20}
+      }
+    },
+    {
+      "id": "ave_12",
+      "personaje": "Halcón",
+      "texto": "Un halcón de Villa Fresquiñón trae un mensaje manchado de nieve: '¡Bandidos asedian nuestras murallas! ¡Envíen a la caballería noria!'.",
+      "opcion_1": {
+        "texto": "Enviar caballería pesada (?)",
+        "efecto": {"e": -10, "t": 0, "p": 15, "c": 30},
+        "prob_exito": 60,
+        "efecto_fracaso": {"e": -30, "t": -10, "p": -15, "c": -20}
+      },
+      "opcion_2": {
+        "texto": "Solo enviar armas, no hombres.",
+        "efecto": {"e": 0, "t": -15, "p": 0, "c": -10}
+      }
+    }
+
+],
+
+"visitas_aliados": [
+    {
+      "id": "visita_flint_1",
+      "personaje": "Comodoro Flint",
+      "texto": "El Comodoro Flint ha anclado su barco en nuestro río. Huele a ron desde aquí y exige una audiencia real para 'estrechar lazos'.",
+      "opcion_1": {
+        "texto": "Abrid las puertas.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "siguiente_carta": "visita_flint_2"
+      },
+      "opcion_2": {
+        "texto": "Cierren el puerto a esa escoria.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": -20}
+      }
+    },
+    {
+      "id": "visita_flint_2",
+      "personaje": "Comodoro Flint",
+      "texto": "Flint entra a tu salón escupiendo en la alfombra. Se ríe a carcajadas. '¡Rey Zacarías! ¿Cómo vas a entretener a un viejo lobo de mar hoy?'",
+      "opcion_1": {
+        "texto": "Con un banquete real.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_flint_3a"
+      },
+      "opcion_2": {
+        "texto": "Con juegos de azar y bebida.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_flint_3b"
+      }
+    },
+    {
+      "id": "visita_flint_3a",
+      "personaje": "Comodoro Flint",
+      "texto": "La mesa está servida en el gran salón. ¿Qué plato principal ordenas que le sirvan al pirata?",
+      "opcion_1": {
+        "texto": "Pavo asado con especias finas.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_flint_4"
+      },
+      "opcion_2": {
+        "texto": "Pescado frito y ron barato.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_flint_4"
+      }
+    },
+    {
+      "id": "visita_flint_3b",
+      "personaje": "Comodoro Flint",
+      "texto": "Te sientas a la mesa con él. ¿A qué jugarán para pasar el rato?",
+      "opcion_1": {
+        "texto": "Ajedrez Norio (Táctica pura).",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_flint_4"
+      },
+      "opcion_2": {
+        "texto": "A los dados apostando oro.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_flint_4"
+      }
+    },
+    {
+      "id": "visita_flint_4",
+      "personaje": "Comodoro Flint",
+      "texto": "El Comodoro se limpia la boca. 'Tengo los cañones apuntando a la flota mercante de Crisol. Si me apoyas con guardias, dividiremos el botín 50/50'.",
+      "es_final_visita": true,
+      "opcion_1": {
+        "texto": "Acepto el trato, amigo mío.",
+        "efecto_exito": {"e": -10, "t": 35, "p": 0, "c": 0},
+        "efecto_fracaso": {"e": -20, "t": 15, "p": -10, "c": -20}
+      },
+      "opcion_2": {
+        "texto": "Tenemos un trato.",
+        "efecto_exito": {"e": -10, "t": 35, "p": 0, "c": 0},
+        "efecto_fracaso": {"e": -20, "t": 15, "p": -10, "c": -20}
+      }
+    },
+    {
+      "id": "visita_hongo_1",
+      "personaje": "Alcalde Hongo-Tinto",
+      "texto": "Un rastro de esporas cubre el pasillo. El Alcalde Hongo-Tinto ha llegado rodando al castillo para hacer una visita oficial.",
+      "opcion_1": {
+        "texto": "Preparad el salón.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "siguiente_carta": "visita_hongo_2"
+      },
+      "opcion_2": {
+        "texto": "Echad sal en la puerta.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": -20}
+      }
+    },
+    {
+      "id": "visita_hongo_2",
+      "personaje": "Alcalde Hongo-Tinto",
+      "texto": "El Alcalde se quita su gigantesco sombrero rojo. 'Rey Zacarías, mis raíces están resecas por el viaje. ¿Qué me ofrece?'",
+      "opcion_1": {
+        "texto": "Un almuerzo en el jardín.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_hongo_3a"
+      },
+      "opcion_2": {
+        "texto": "Una cacería en el bosque.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_hongo_3b"
+      }
+    },
+    {
+      "id": "visita_hongo_3a",
+      "personaje": "Alcalde Hongo-Tinto",
+      "texto": "Se sientan a comer en el jardín. ¿Qué has mandado preparar para él?",
+      "opcion_1": {
+        "texto": "Cerdo asado a fuego lento.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_hongo_4"
+      },
+      "opcion_2": {
+        "texto": "Ensaladas húmedas y tubérculos.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_hongo_4"
+      }
+    },
+    {
+      "id": "visita_hongo_3b",
+      "personaje": "Alcalde Hongo-Tinto",
+      "texto": "Lo llevas al bosque montado en un pony muy pequeño. ¿Qué buscan cazar?",
+      "opcion_1": {
+        "texto": "Ciervos veloces.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_hongo_4"
+      },
+      "opcion_2": {
+        "texto": "Buscar trufas y musgos raros.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_hongo_4"
+      }
+    },
+    {
+      "id": "visita_hongo_4",
+      "personaje": "Alcalde Hongo-Tinto",
+      "texto": "El Alcalde sonríe soltando esporas. 'Mi gente descubrió una veta de basalto precioso. Se la venderé a North antes que a nadie'.",
+      "es_final_visita": true,
+      "opcion_1": {
+        "texto": "Cerramos el trato, amigo.",
+        "efecto_exito": {"e": 0, "t": -15, "p": 15, "c": 25},
+        "efecto_fracaso": {"e": 0, "t": -30, "p": 0, "c": 10}
+      },
+      "opcion_2": {
+        "texto": "Acepto su basalto.",
+        "efecto_exito": {"e": 0, "t": -15, "p": 15, "c": 25},
+        "efecto_fracaso": {"e": 0, "t": -30, "p": 0, "c": 10}
+      }
+    },
+    {
+      "id": "visita_galava_1",
+      "personaje": "Jefa Galava Dunie",
+      "texto": "La Jefa Galava Dunie ha llegado. Viene con botas llenas de lodo y una camisa de franela sudada, pero trae carros de tributo.",
+      "opcion_1": {
+        "texto": "Recíbanla con honores.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "siguiente_carta": "visita_galava_2"
+      },
+      "opcion_2": {
+        "texto": "Que se limpie antes de entrar.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": -20}
+      }
+    },
+    {
+      "id": "visita_galava_2",
+      "personaje": "Jefa Galava Dunie",
+      "texto": "Galava te da un apretón de manos que casi te rompe los nudillos. 'Sus muros son de piedra bonita, Zacarías. ¿Qué hacemos hoy?'",
+      "opcion_1": {
+        "texto": "Un baile de gala en el salón.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_galava_3a"
+      },
+      "opcion_2": {
+        "texto": "Recorrido por los establos.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_galava_3b"
+      }
+    },
+    {
+      "id": "visita_galava_3a",
+      "personaje": "Jefa Galava Dunie",
+      "texto": "La música suena. Los nobles están vestidos de seda. ¿Qué música pides?",
+      "opcion_1": {
+        "texto": "Un vals clásico y elegante.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_galava_4"
+      },
+      "opcion_2": {
+        "texto": "Danza rústica de taberna.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_galava_4"
+      }
+    },
+    {
+      "id": "visita_galava_3b",
+      "personaje": "Jefa Galava Dunie",
+      "texto": "La llevas a los establos militares. ¿Qué le muestras con orgullo?",
+      "opcion_1": {
+        "texto": "Los caballos blancos de desfile.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_galava_4"
+      },
+      "opcion_2": {
+        "texto": "Las bestias de carga y bueyes.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_galava_4"
+      }
+    },
+    {
+      "id": "visita_galava_4",
+      "personaje": "Jefa Galava Dunie",
+      "texto": "Galava se seca el sudor. 'Tenemos un excedente de trigo masivo este año. Se los dejaré a ustedes si pagan en acero'.",
+      "es_final_visita": true,
+      "opcion_1": {
+        "texto": "Tenemos un trato, Jefa.",
+        "efecto_exito": {"e": 10, "t": -15, "p": 30, "c": 15},
+        "efecto_fracaso": {"e": 0, "t": -30, "p": 10, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Acepto el trigo.",
+        "efecto_exito": {"e": 10, "t": -15, "p": 30, "c": 15},
+        "efecto_fracaso": {"e": 0, "t": -30, "p": 10, "c": 0}
+      }
+    },
+    {
+      "id": "visita_nieve_1",
+      "personaje": "Matriarca Nieve-Clara",
+      "texto": "La Matriarca llega envuelta en su abrigo gigante de piel de lobo. El suelo de piedra parece congelarse a su paso.",
+      "opcion_1": {
+        "texto": "Abridle paso al trono.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "siguiente_carta": "visita_nieve_2"
+      },
+      "opcion_2": {
+        "texto": "Que espere afuera.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": -20}
+      }
+    },
+    {
+      "id": "visita_nieve_2",
+      "personaje": "Matriarca Nieve-Clara",
+      "texto": "Su aliento forma vaho en el aire. 'Nuestras montañas están frías, Zacarías. Busco la calidez de su hospitalidad'.",
+      "opcion_1": {
+        "texto": "Charla frente a la chimenea.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_nieve_3a"
+      },
+      "opcion_2": {
+        "texto": "Revista a las tropas en el patio.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_nieve_3b"
+      }
+    },
+    {
+      "id": "visita_nieve_3a",
+      "personaje": "Matriarca Nieve-Clara",
+      "texto": "Se sientan frente al fuego rugiente. ¿Qué le ofreces para beber?",
+      "opcion_1": {
+        "texto": "Vino caliente con especias.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_nieve_4"
+      },
+      "opcion_2": {
+        "texto": "Cerveza fría y música ruidosa.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_nieve_4"
+      }
+    },
+    {
+      "id": "visita_nieve_3b",
+      "personaje": "Matriarca Nieve-Clara",
+      "texto": "Están en el patio exterior helado viendo a los soldados. ¿Qué le muestras?",
+      "opcion_1": {
+        "texto": "Armaduras de placas pesadas.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_nieve_4"
+      },
+      "opcion_2": {
+        "texto": "Abrigos de supervivencia.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_nieve_4"
+      }
+    },
+    {
+      "id": "visita_nieve_4",
+      "personaje": "Matriarca Nieve-Clara",
+      "texto": "La Matriarca asiente. 'Nuestros cazadores atraparon osos polares. Sus pieles son mejores que el hierro. Se las ofrezco a su guardia'.",
+      "es_final_visita": true,
+      "opcion_1": {
+        "texto": "Las tomaremos con gratitud.",
+        "efecto_exito": {"e": 30, "t": -10, "p": 0, "c": 15},
+        "efecto_fracaso": {"e": 10, "t": -20, "p": 0, "c": -15}
+      },
+      "opcion_2": {
+        "texto": "Aceptamos el trato.",
+        "efecto_exito": {"e": 30, "t": -10, "p": 0, "c": 15},
+        "efecto_fracaso": {"e": 10, "t": -20, "p": 0, "c": -15}
+      }
+    },
+    {
+      "id": "visita_oram_1",
+      "personaje": "Patriarca Oram",
+      "texto": "El Patriarca ha cruzado las dunas. Su barba llega al suelo y su túnica huele a arena seca y huesos de ballena.",
+      "opcion_1": {
+        "texto": "Recibir al anciano.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "siguiente_carta": "visita_oram_2"
+      },
+      "opcion_2": {
+        "texto": "El Exilio no es bienvenido.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": -20}
+      }
+    },
+    {
+      "id": "visita_oram_2",
+      "personaje": "Patriarca Oram",
+      "texto": "Oram clava su bastón en el suelo. 'Rey de la piedra húmeda. He venido a medir el valor de su espíritu, no de su bóveda'.",
+      "opcion_1": {
+        "texto": "Banquete de 10 platos.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_oram_3a"
+      },
+      "opcion_2": {
+        "texto": "Paseo por jardines tranquilos.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_oram_3b"
+      }
+    },
+    {
+      "id": "visita_oram_3a",
+      "personaje": "Patriarca Oram",
+      "texto": "Se sienta a la mesa mirando la comida con desconfianza. ¿Qué le sirves?",
+      "opcion_1": {
+        "texto": "Cortes de carne caros.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_oram_4"
+      },
+      "opcion_2": {
+        "texto": "Agua de manantial y pan.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_oram_4"
+      }
+    },
+    {
+      "id": "visita_oram_3b",
+      "personaje": "Patriarca Oram",
+      "texto": "Caminan en silencio entre los árboles. Él te pregunta de qué quieres hablar.",
+      "opcion_1": {
+        "texto": "De rutas comerciales y oro.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 0,
+        "siguiente_carta": "visita_oram_4"
+      },
+      "opcion_2": {
+        "texto": "Estrellas y antiguos sabios.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "puntos_visita": 1,
+        "siguiente_carta": "visita_oram_4"
+      }
+    },
+    {
+      "id": "visita_oram_4",
+      "personaje": "Patriarca Oram",
+      "texto": "El Patriarca cierra los ojos. 'Mis guerreros nómadas buscan propósito. Los dejaré a su servicio si promete respetarlos'.",
+      "es_final_visita": true,
+      "opcion_1": {
+        "texto": "Prometo honrar su servicio.",
+        "efecto_exito": {"e": 25, "t": -10, "p": 0, "c": 20},
+        "efecto_fracaso": {"e": 10, "t": -25, "p": -10, "c": -20}
+      },
+      "opcion_2": {
+        "texto": "Me vendrán bien.",
+        "efecto_exito": {"e": 25, "t": -10, "p": 0, "c": 20},
+        "efecto_fracaso": {"e": 10, "t": -25, "p": -10, "c": -20}
+      }
+    }
+  ],
+
+  "eventos_consejo": [
+    {
+      "id": "cons_silas_1",
+      "personaje": "Maestre Silas",
+      "texto": "Rey Zacarías, el invierno ha congelado nuestros campos de amapola negra. Sin ella, no puedo destilar los analgésicos para los soldados heridos. Necesito importar un cargamento urgente.",
+      "opcion_1": {
+        "texto": "Compra todo lo que necesites.",
+        "efecto": {"e": 10, "t": -15, "p": 0, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Que los heridos soporten el dolor.",
+        "efecto": {"e": -15, "t": 0, "p": -10, "c": 0}
+      }
+    },
+    {
+      "id": "cons_silas_2",
+      "personaje": "Maestre Silas",
+      "texto": "Majestad, hay un brote de sarampión leve. Tengo tónico suficiente para curar a la nobleza del castillo, o puedo diluirlo en el pozo para salvar a los campesinos, pero los nobles enfermarán.",
+      "opcion_1": {
+        "texto": "Salva a la nobleza del castillo.",
+        "efecto": {"e": 0, "t": 0, "p": -20, "c": 15}
+      },
+      "opcion_2": {
+        "texto": "Dilúyelo y dáselo al pueblo.",
+        "efecto": {"e": 0, "t": 0, "p": 20, "c": -15}
+      }
+    },
+    {
+      "id": "cons_silas_3",
+      "personaje": "Maestre Silas",
+      "texto": "He estado destilando veneno de ranas del Arroyo de Jade. Si me da oro para equipo, creo que puedo crear un ungüento que inmunice a nuestros soldados contra las flechas de Crisol.",
+      "opcion_1": {
+        "texto": "Financia su investigación médica.",
+        "efecto": {"e": 15, "t": -15, "p": 0, "c": 10}
+      },
+      "opcion_2": {
+        "texto": "Deja de jugar con venenos, Silas.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": -10}
+      }
+    },
+    {
+      "id": "cons_anyara_1",
+      "personaje": "Anyara \"La Red\"",
+      "texto": "Mi rey, el Gremio de Mercaderes usa el río de North sin pagar la cuota de los muelles. Exijo permiso para hundir un par de sus barcazas como advertencia.",
+      "opcion_1": {
+        "texto": "Hunde sus barcos de contrabando.",
+        "efecto": {"e": 15, "t": -10, "p": 0, "c": -15}
+      },
+      "opcion_2": {
+        "texto": "Cóbrales una multa diplomática.",
+        "efecto": {"e": -10, "t": 15, "p": 0, "c": 10}
+      }
+    },
+    {
+      "id": "cons_anyara_2",
+      "personaje": "Anyara \"La Red\"",
+      "texto": "La joya de nuestra flota, el galeón 'Rompe-Olas', se está pudriendo. Cuesta demasiado mantenerlo a flote. Sugiero desmantelarlo para vender la madera y reforzar los pesqueros pequeños.",
+      "opcion_1": {
+        "texto": "Desmántelalo, no sirve para guerra.",
+        "efecto": {"e": -15, "t": 15, "p": 10, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "¡Repáralo! Es el orgullo de North.",
+        "efecto": {"e": 15, "t": -20, "p": 0, "c": 10}
+      }
+    },
+    {
+      "id": "cons_anyara_3",
+      "personaje": "Anyara \"La Red\"",
+      "texto": "Se acerca una tormenta brutal. Los pescadores quieren salir a recoger sus redes antes de que el oleaje se las lleve, pero es un suicidio. ¿Debo usar a la armada para bloquearles el paso?",
+      "opcion_1": {
+        "texto": "Bloquea el puerto. Salva sus vidas.",
+        "efecto": {"e": -10, "t": 0, "p": -15, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Déjalos arriesgarse por su comida.",
+        "efecto": {"e": 0, "t": 0, "p": 15, "c": -10}
+      }
+    },
+    {
+      "id": "cons_kaelon_1",
+      "personaje": "Kaelon",
+      "texto": "Majestad, las antorchas manchan nuestras paredes con hollín. He diseñado faroles de cristal que refractan la luz de la luna. Si me da oro, iluminaré todo North.",
+      "opcion_1": {
+        "texto": "Fabrica tus faroles de lujo.",
+        "efecto": {"e": 0, "t": -20, "p": 15, "c": 15}
+      },
+      "opcion_2": {
+        "texto": "La brea barata funciona bien.",
+        "efecto": {"e": 0, "t": 10, "p": -10, "c": -10}
+      }
+    },
+    {
+      "id": "cons_kaelon_2",
+      "personaje": "Kaelon",
+      "texto": "He pulido lentes de cristal de altísima pureza. Podemos acoplarlos en catalejos para los arqueros y vigías. Verán a los enemigos antes de que crucen el valle.",
+      "opcion_1": {
+        "texto": "Equipa a toda la guardia con ellos.",
+        "efecto": {"e": 20, "t": -15, "p": 0, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "No necesitamos juguetes caros.",
+        "efecto": {"e": -10, "t": 0, "p": 0, "c": 0}
+      }
+    },
+    {
+      "id": "cons_kaelon_3",
+      "personaje": "Kaelon",
+      "texto": "Rey Zacarías, LLeah Klar acapara el carbón de calidad para sus espadas toscas. Mis hojalateros necesitan ese calor para moldear cristal y oro. Oblíguelo a compartir.",
+      "opcion_1": {
+        "texto": "El carbón es para las espadas.",
+        "efecto": {"e": 15, "t": -10, "p": 0, "c": -15}
+      },
+      "opcion_2": {
+        "texto": "Prioridad al cristal y la orfebrería.",
+        "efecto": {"e": -15, "t": 15, "p": 0, "c": 15}
+      }
+    }
+  ],
+  "arcos_principes": [
+    {
+      "id": "arco_garret_1",
+      "personaje": "Garret",
+      "texto": "Padre, el acero de North es fuerte, pero nuestras forjas son pequeñas. Si me das los fondos, construiré la Gran Forja del Volcán. Haremos maravillas.",
+      "opcion_1": {
+        "texto": "Construye tu sueño, hijo.",
+        "efecto": {"e": 0, "t": -20, "p": 15, "c": 0},
+        "accion": "avanzar_arco_garret"
+      },
+      "opcion_2": {
+        "texto": "Sigue haciendo espadas normales.",
+        "efecto": {"e": 0, "t": 0, "p": -10, "c": 0},
+        "accion": "frenar_arco_garret"
+      }
+    },
+    {
+      "id": "arco_garret_2",
+      "personaje": "Garret",
+      "texto": "La Gran Forja está lista, pero necesito Cristal de Fuego de Grotte Cove para derretir el hierro pesado. Costará una fortuna diplomática.",
+      "opcion_1": {
+        "texto": "Cómpralo, no importa el precio.",
+        "efecto": {"e": 0, "t": -15, "p": 0, "c": -15},
+        "accion": "avanzar_arco_garret"
+      },
+      "opcion_2": {
+        "texto": "Usa carbón normal.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 10},
+        "accion": "frenar_arco_garret"
+      }
+    },
+    {
+      "id": "arco_garret_3",
+      "personaje": "Garret",
+      "texto": "¡Lo logré! He forjado los 'Leviatanes de Hierro', barcos recubiertos de metal que resisten cualquier monstruo marino. Estamos listos.",
+      "opcion_1": {
+        "texto": "Bendecir la flota de hierro.",
+        "efecto": {"e": 20, "t": 0, "p": 15, "c": 10},
+        "accion": "completar_arco_garret"
+      },
+      "opcion_2": {
+        "texto": "Úsalos para defender el río.",
+        "efecto": {"e": 15, "t": 0, "p": 0, "c": 0},
+        "accion": "completar_arco_garret"
+      }
+    },
+    {
+      "id": "arco_hans_1",
+      "personaje": "Príncipe Hans",
+      "texto": "Padre, los bandidos del sur se burlan de nuestras fronteras. Déjame liderar una cruzada para limpiar la escoria y asegurar un perímetro seguro.",
+      "opcion_1": {
+        "texto": "Marcha, hijo mío. Trae la paz.",
+        "efecto": {"e": -15, "t": -10, "p": 15, "c": 0},
+        "accion": "avanzar_arco_hans"
+      },
+      "opcion_2": {
+        "texto": "Tu lugar está aquí, defendiéndome.",
+        "efecto": {"e": 0, "t": 0, "p": -10, "c": 0},
+        "accion": "frenar_arco_hans"
+      }
+    },
+    {
+      "id": "arco_hans_2",
+      "personaje": "Cuervo",
+      "texto": "(Pergamino manchado): 'Padre, fue una emboscada en el Cañón Rojo. Estamos acorralados. Envía a la guardia pesada o moriremos aquí'.",
+      "opcion_1": {
+        "texto": "Enviar a los refuerzos. ¡Sálvenlo!",
+        "efecto": {"e": -25, "t": -15, "p": 0, "c": 0},
+        "accion": "avanzar_arco_hans"
+      },
+      "opcion_2": {
+        "texto": "Que pelee sus propias batallas.",
+        "efecto": {"e": -15, "t": 0, "p": -15, "c": 0},
+        "accion": "frenar_arco_hans"
+      }
+    },
+    {
+      "id": "arco_hans_3",
+      "personaje": "Príncipe Hans",
+      "texto": "(Hans regresa lleno de cicatrices). Sobrevivimos y purgamos el sur. He reunido a los veteranos y fundado 'La Orden del Horizonte', una fuerza imparable.",
+      "opcion_1": {
+        "texto": "Ustedes serán el escudo de North.",
+        "efecto": {"e": 30, "t": 0, "p": 10, "c": 15},
+        "accion": "completar_arco_hans"
+      },
+      "opcion_2": {
+        "texto": "Licencia a la mitad, cuestan mucho.",
+        "efecto": {"e": 10, "t": 15, "p": 0, "c": 0},
+        "accion": "completar_arco_hans"
+      }
+    },
+    {
+      "id": "arco_jim_1",
+      "personaje": "Príncipe Jim",
+      "texto": "Padre, los mapas de nuestra biblioteca son viejos. Necesito oro para comprar pergaminos a los mercaderes y compilar la geografía real.",
+      "opcion_1": {
+        "texto": "El conocimiento es poder. Págales.",
+        "efecto": {"e": 0, "t": -20, "p": 0, "c": 10},
+        "accion": "avanzar_arco_jim"
+      },
+      "opcion_2": {
+        "texto": "Los mapas viejos sirven bien.",
+        "efecto": {"e": 0, "t": 0, "p": -10, "c": 0},
+        "accion": "frenar_arco_jim"
+      }
+    },
+    {
+      "id": "arco_jim_2",
+      "personaje": "Príncipe Jim",
+      "texto": "Las escalas de Crisol y Muralia tienen huecos enormes. Necesito sobornar a los cartógrafos de El Exilio para que me revelen las rutas secretas.",
+      "opcion_1": {
+        "texto": "Paga lo que pidan, quiero la verdad.",
+        "efecto": {"e": 0, "t": -15, "p": 0, "c": -15},
+        "accion": "avanzar_arco_jim"
+      },
+      "opcion_2": {
+        "texto": "Mucho riesgo diplomático. Déjalo.",
+        "efecto": {"e": 0, "t": 0, "p": 10, "c": 15},
+        "accion": "frenar_arco_jim"
+      }
+    },
+    {
+      "id": "arco_jim_3",
+      "personaje": "Príncipe Jim",
+      "texto": "¡Lo logré! He terminado el 'Atlas Absoluto'. Y padre... los cálculos lo demuestran. ¡Hay continentes enteros sin explorar más allá del mar!",
+      "opcion_1": {
+        "texto": "Un descubrimiento histórico.",
+        "efecto": {"e": 0, "t": 0, "p": 15, "c": 20},
+        "accion": "completar_arco_jim"
+      },
+      "opcion_2": {
+        "texto": "Guárdalo bajo llave. Es peligroso.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": -10},
+        "accion": "completar_arco_jim"
+      }
+    },
+    {
+      "id": "arco_fred_1",
+      "personaje": "Príncipe Fred",
+      "texto": "¡Padre! Las raciones de grano siempre se pudren. Si me das fondos para un laboratorio, puedo crear una pasta alquímica nutritiva que no caduque jamás.",
+      "opcion_1": {
+        "texto": "Construye tu cocina, lejos del trono.",
+        "efecto": {"e": 0, "t": -20, "p": 0, "c": 0},
+        "accion": "avanzar_arco_fred"
+      },
+      "opcion_2": {
+        "texto": "Deja de jugar con la comida. No.",
+        "efecto": {"e": 0, "t": 0, "p": -10, "c": 0},
+        "accion": "frenar_arco_fred"
+      }
+    },
+    {
+      "id": "arco_fred_2",
+      "personaje": "Príncipe Fred",
+      "texto": "Bueno... el primer lote fermentó mal. Un barracón de guardias se enfermó del estómago. Necesito fondos para ingredientes más puros.",
+      "opcion_1": {
+        "texto": "Te doy otra oportunidad. Mejórala.",
+        "efecto": {"e": -20, "t": -20, "p": -10, "c": 0},
+        "accion": "avanzar_arco_fred"
+      },
+      "opcion_2": {
+        "texto": "¡Casi los matas! Se acabó el invento.",
+        "efecto": {"e": 0, "t": 0, "p": 15, "c": 10},
+        "accion": "frenar_arco_fred"
+      }
+    },
+    {
+      "id": "arco_fred_3",
+      "personaje": "Príncipe Fred",
+      "texto": "¡La he perfeccionado! La 'Ración Eterna'. Parece un ladrillo de barro seco, pero al morderla sabe a estofado. Un hombre vivirá semanas con esto.",
+      "opcion_1": {
+        "texto": "Eres un genio de la supervivencia.",
+        "efecto": {"e": 10, "t": 0, "p": 25, "c": 10},
+        "accion": "completar_arco_fred"
+      },
+      "opcion_2": {
+        "texto": "Obliga al ejército a comer solo esto.",
+        "efecto": {"e": -15, "t": 15, "p": -10, "c": 0},
+        "accion": "completar_arco_fred"
+      }
+    }
+  ],
+"eventos_discipulos": [
+    {
+      "id": "lib_0",
+      "personaje": "Líbero",
+      "texto": "Saludos, Rey Zacarías. Soy Líbero. Firme este contrato con mi fuego azul y multiplicaré su riqueza y su arte, a cambio de simples... concesiones menores.",
+      "opcion_1": {
+        "texto": "Firmar. Me interesa la cultura.",
+        "efecto": {"e": -10, "t": 20, "p": 15, "c": -10},
+        "accion": "reclutar_libero"
+      },
+      "opcion_2": {
+        "texto": "North no necesita tus tratos.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 10}
+      }
+    },
+    {
+      "id": "lib_1",
+      "personaje": "Líbero",
+      "texto": "He redactado un tratado comercial bellísimo. Usando un vacío legal antiguo, podemos monopolizar la venta de mármol del Exilio sin disparar una flecha.",
+      "opcion_1": {
+        "texto": "Ejecuta la cláusula, Líbero.",
+        "efecto": {"e": 0, "t": 35, "p": 0, "c": -25}
+      },
+      "opcion_2": {
+        "texto": "Mantenemos nuestro honor.",
+        "efecto": {"e": 0, "t": -15, "p": 0, "c": 15}
+      }
+    },
+    {
+      "id": "lib_2",
+      "personaje": "Líbero",
+      "texto": "El arte eleva el espíritu humano. Exijo que desviemos los fondos de la herrería militar para construir un majestuoso teatro de ópera en North.",
+      "opcion_1": {
+        "texto": "El pueblo necesita belleza.",
+        "efecto": {"e": -25, "t": -10, "p": 25, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Necesitamos espadas.",
+        "efecto": {"e": 15, "t": 0, "p": -15, "c": 0}
+      }
+    },
+    {
+      "id": "lib_3",
+      "personaje": "Líbero",
+      "texto": "Es hora de cobrar mi pequeña 'concesión', rey. Solicito acceso total a las bóvedas para llevarme la biblioteca de sus ancestros. Solo son libros viejos.",
+      "opcion_1": {
+        "texto": "Llévatelos y cumple tu parte.",
+        "efecto": {"e": 0, "t": 15, "p": 0, "c": -20}
+      },
+      "opcion_2": {
+        "texto": "¡La historia no se vende!",
+        "efecto": {"e": 0, "t": -15, "p": 10, "c": 10}
+      }
+    },
+    {
+      "id": "lib_r1",
+      "personaje": "Líbero",
+      "texto": "Entidades de otro plano ofrecen duplicar nuestras reservas de oro, pero exigen una 'garantía de carne'. Es un riesgo mínimo si mis cálculos son correctos.",
+      "opcion_1": {
+        "texto": "Firma ese contrato oscuro (?)",
+        "prob_exito": 60,
+        "efecto_exito": {"e": 0, "t": 35, "p": 0, "c": 0},
+        "efecto_fracaso": {"e": 0, "t": -20, "p": -30, "c": -10, "accion": "castigar_discipulo"}
+      },
+      "opcion_2": {
+        "texto": "No jugaré con almas humanas.",
+        "efecto": {"e": 0, "t": 0, "p": 15, "c": 0}
+      }
+    },
+    {
+      "id": "lib_r2",
+      "personaje": "Líbero",
+      "texto": "He encontrado un portal a un casino interdimensional. Si me da acceso a todo el tesoro real para una única apuesta, traeré la riqueza de mil mundos.",
+      "opcion_1": {
+        "texto": "Apuesta el reino entero (?)",
+        "prob_exito": 20,
+        "efecto_exito": {"e": 30, "t": 40, "p": 20, "c": 30},
+        "efecto_fracaso": {"e": -10, "t": -40, "p": 0, "c": -20, "accion": "castigar_discipulo"}
+      },
+      "opcion_2": {
+        "texto": "Eres un adicto. Lárgate.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0}
+      }
+    },
+    {
+      "id": "pis_0",
+      "personaje": "Pisciero",
+      "texto": "Sus curanderos son patéticos, Rey Zacarías. Soy Pisciero. Póngame a cargo de la sanidad. Curo rápido, pero no espere palmaditas en la espalda.",
+      "opcion_1": {
+        "texto": "Estás contratado. Salva vidas.",
+        "efecto": {"e": 10, "t": -10, "p": 15, "c": -10},
+        "accion": "reclutar_pisciero"
+      },
+      "opcion_2": {
+        "texto": "No quiero amargados en mi corte.",
+        "efecto": {"e": 0, "t": 0, "p": -10, "c": 10}
+      }
+    },
+    {
+      "id": "pis_1",
+      "personaje": "Pisciero",
+      "texto": "Creé un fertilizante que duplicará las cosechas. Sí, huele a cadáver en descomposición y el pueblo lloriquea por la peste, pero no morirán de hambre.",
+      "opcion_1": {
+        "texto": "El hambre es peor que el olor.",
+        "efecto": {"e": 0, "t": 15, "p": -20, "c": 10}
+      },
+      "opcion_2": {
+        "texto": "Prohíbo usar esa asquerosidad.",
+        "efecto": {"e": 0, "t": -15, "p": 15, "c": -10}
+      }
+    },
+    {
+      "id": "pis_2",
+      "personaje": "Pisciero",
+      "texto": "Su guardia real tose demasiado. Hice un jarabe. Sabe a ácido de batería y provocará calambres, pero limpiará sus pulmones de por vida.",
+      "opcion_1": {
+        "texto": "Oblígalos a beber tu jarabe.",
+        "efecto": {"e": 20, "t": 0, "p": -15, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Déjalos toser en paz, sádico.",
+        "efecto": {"e": -10, "t": 0, "p": 10, "c": 0}
+      }
+    },
+    {
+      "id": "pis_3",
+      "personaje": "Pisciero",
+      "texto": "Para avanzar en mi ciencia, exijo los cuerpos de los soldados caídos en la última escaramuza para diseccionarlos. A las viudas no les gustará.",
+      "opcion_1": {
+        "texto": "Entrégaselos en secreto.",
+        "efecto": {"e": 10, "t": 0, "p": -25, "c": -15}
+      },
+      "opcion_2": {
+        "texto": "Dales sepultura como héroes.",
+        "efecto": {"e": 10, "t": -10, "p": 20, "c": 10}
+      }
+    },
+    {
+      "id": "pis_r1",
+      "personaje": "Pisciero",
+      "texto": "Si libero mi gas de amapola verde por las calles, el pueblo toserá sangre un día, pero se volverán inmunes a cualquier plaga por décadas.",
+      "opcion_1": {
+        "texto": "Libera el gas en las calles (?)",
+        "prob_exito": 60,
+        "efecto_exito": {"e": 10, "t": 0, "p": 25, "c": 0},
+        "efecto_fracaso": {"e": -10, "t": 0, "p": -40, "c": -15, "accion": "castigar_discipulo"}
+      },
+      "opcion_2": {
+        "texto": "No envenenaré a mi gente.",
+        "efecto": {"e": 0, "t": 0, "p": 15, "c": 10}
+      }
+    },
+    {
+      "id": "pis_r2",
+      "personaje": "Pisciero",
+      "texto": "He extraído fluido espinal. Puedo inyectarlo en sus guardias caídos para... 'reanimarlos' y que sigan luchando. Será un ejército eterno.",
+      "opcion_1": {
+        "texto": "Inyecta el suero a los muertos (?)",
+        "prob_exito": 20,
+        "efecto_exito": {"e": 40, "t": 0, "p": -20, "c": -20},
+        "efecto_fracaso": {"e": -30, "t": -15, "p": -20, "c": 0, "accion": "castigar_discipulo"}
+      },
+      "opcion_2": {
+        "texto": "Deja a los muertos descansar.",
+        "efecto": {"e": 0, "t": 0, "p": 10, "c": 15}
+      }
+    },
+    {
+      "id": "gem_0",
+      "personaje": "Gem-Isis",
+      "texto": "S-soy Gem-Isis. Mi luz verde a veces se sale de control. Pero si me da asilo, le juro que puedo usar mi magia para escudar a sus ejércitos.",
+      "opcion_1": {
+        "texto": "Te ayudaremos a controlarlo.",
+        "efecto": {"e": 20, "t": 0, "p": 10, "c": -15},
+        "accion": "reclutar_gem_isis"
+      },
+      "opcion_2": {
+        "texto": "Eres una bomba de tiempo. Vete.",
+        "efecto": {"e": 0, "t": 0, "p": -10, "c": 10}
+      }
+    },
+    {
+      "id": "gem_1",
+      "personaje": "Gem-Isis",
+      "texto": "¡Perdón! Tuve una pesadilla y mi gema disparó un muro de cristal sólido en el patio. Atrapó a varios guardias, pero... ¡ahora el castillo es más resistente!",
+      "opcion_1": {
+        "texto": "Déjalo, es una buena barrera.",
+        "efecto": {"e": 15, "t": 0, "p": -15, "c": -10}
+      },
+      "opcion_2": {
+        "texto": "Paga mineros para destruirlo.",
+        "efecto": {"e": -10, "t": -15, "p": 10, "c": 15}
+      }
+    },
+    {
+      "id": "gem_2",
+      "personaje": "Gem-Isis",
+      "texto": "H-hay una plaga leve en las granjas. Creo que puedo curar la tierra con mi luz... pero si me pongo nerviosa, podría mutar el trigo. ¿D-debo intentarlo?",
+      "opcion_1": {
+        "texto": "Confío en ti. Respira y hazlo.",
+        "efecto": {"e": -15, "t": 20, "p": 15, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Mejor no arriesgarnos.",
+        "efecto": {"e": 0, "t": -15, "p": -10, "c": 0}
+      }
+    },
+    {
+      "id": "gem_3",
+      "personaje": "Gem-Isis",
+      "texto": "¡A-aléjense todos! ¡Mi gema está absorbiendo demasiada energía solar! N-necesito bloques de oro macizo para crear un círculo de contención ahora mismo.",
+      "opcion_1": {
+        "texto": "¡Toma el oro, rápido!",
+        "efecto": {"e": 0, "t": -30, "p": 10, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "¡Corran! ¡Evacúen el ala este!",
+        "efecto": {"e": -15, "t": 0, "p": -20, "c": -15}
+      }
+    },
+    {
+      "id": "gem_r1",
+      "personaje": "Gem-Isis",
+      "texto": "M-majestad... Si sobrecarga mi gema verde, puedo crear un sol de cristal sobre el castillo. Derretirá el invierno y dará calor a todos... s-si lo controlo.",
+      "opcion_1": {
+        "texto": "Sobrecarga la gema (?)",
+        "prob_exito": 60,
+        "efecto_exito": {"e": 0, "t": 0, "p": 35, "c": 15},
+        "efecto_fracaso": {"e": 0, "t": -20, "p": -30, "c": -10, "accion": "castigar_discipulo"}
+      },
+      "opcion_2": {
+        "texto": "Demasiado peligroso. Apágate.",
+        "efecto": {"e": 0, "t": 0, "p": -10, "c": 0}
+      }
+    },
+    {
+      "id": "gem_r2",
+      "personaje": "Gem-Isis",
+      "texto": "(Su voz es demoníaca) ¡LA BESTIA QUIERE SANGRE DE NOBLES! ¡ENTRÉGAME A TRES MIEMBROS DEL CONSEJO PARA DEVORARLOS O DESTRUIRÉ NORTH!",
+      "opcion_1": {
+        "texto": "Dejar que cace a los nobles (?)",
+        "prob_exito": 20,
+        "efecto_exito": {"e": 40, "t": 0, "p": -10, "c": -40},
+        "efecto_fracaso": {"e": -25, "t": -20, "p": -15, "c": 0, "accion": "castigar_discipulo"}
+      },
+      "opcion_2": {
+        "texto": "¡Llamad al ejército, matadla!",
+        "efecto": {"e": -20, "t": -10, "p": -10, "c": 0}
+      }
+    },
+    {
+      "id": "luc_0",
+      "personaje": "Lucien",
+      "texto": "Saludos, Rey Zacarías. Soy Lucien, un humilde ingeniero civil. He notado serias fallas en los cimientos de piedra de North. Permítame revisar sus sótanos.",
+      "opcion_1": {
+        "texto": "Revisa las bases del castillo.",
+        "efecto": {"e": 0, "t": -10, "p": 10, "c": 10},
+        "accion": "reclutar_lucien"
+      },
+      "opcion_2": {
+        "texto": "Mis muros son sólidos, vete.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0}
+      }
+    },
+    {
+      "id": "luc_1",
+      "personaje": "Lucien",
+      "texto": "Mis inspecciones avanzan, pero para reforzar las bóvedas inferiores necesito una cantidad exagerada de cobre y engranajes finos. Las armaduras tendrán que esperar.",
+      "opcion_1": {
+        "texto": "Tómalo. La seguridad es primero.",
+        "efecto": {"e": -20, "t": -10, "p": 0, "c": 15}
+      },
+      "opcion_2": {
+        "texto": "El metal es para espadas.",
+        "efecto": {"e": 15, "t": 0, "p": -10, "c": -10}
+      }
+    },
+    {
+      "id": "luc_2",
+      "personaje": "Lucien",
+      "texto": "Me disculpo por el ruido nocturno. Mis... trabajadores cavaban un pozo de filtración en los jardines. Es ruidoso, pero evitará inundaciones futuras.",
+      "opcion_1": {
+        "texto": "Sigan cavando, confío en ti.",
+        "efecto": {"e": 0, "t": -15, "p": 15, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Tapa ese agujero, asustan a todos.",
+        "efecto": {"e": 0, "t": 0, "p": -10, "c": 10}
+      }
+    },
+    {
+      "id": "luc_3",
+      "personaje": "Lucien",
+      "texto": "(Te regala un pájaro de metal muy complejo que canta al darle cuerda). Un pequeño obsequio por su hospitalidad. Un juguete que armé en mis ratos libres.",
+      "opcion_1": {
+        "texto": "Exhíbelo ante los embajadores.",
+        "efecto": {"e": 0, "t": 0, "p": 15, "c": 20}
+      },
+      "opcion_2": {
+        "texto": "Desármalo para estudiar su valor.",
+        "efecto": {"e": 0, "t": 20, "p": 0, "c": -15}
+      }
+    },
+    {
+      "id": "luc_p1",
+      "personaje": "Lucien",
+      "texto": "Rey, mis 'bombas de agua' necesitan aceite fósil profundo y huesos de ballena antigua. Solo el Patriarca Oram lo tiene. Páguele y forje una alianza con él.",
+      "opcion_1": {
+        "texto": "Comprar el aceite a Oram.",
+        "efecto": {"e": 0, "t": -30, "p": 0, "c": 25},
+        "accion": "avanzar_maquina"
+      },
+      "opcion_2": {
+        "texto": "No derrocharé oro en aceite viejo.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": -10}
+      }
+    },
+    {
+      "id": "luc_p2",
+      "personaje": "Lucien",
+      "texto": "La maquinaria pesada está en las catacumbas. Necesito la fuerza de Garret, la táctica de Hans, los cálculos de Jim y la alquimia de Fred para ensamblarla.",
+      "opcion_1": {
+        "texto": "Mis hijos te ayudarán en secreto.",
+        "efecto": {"e": -15, "t": 0, "p": -15, "c": -15},
+        "accion": "avanzar_maquina"
+      },
+      "opcion_2": {
+        "texto": "Mis hijos son realeza, no obreros.",
+        "efecto": {"e": 0, "t": 0, "p": 15, "c": 10}
+      }
+    },
+    {
+      "id": "luc_p3",
+      "personaje": "Lucien",
+      "texto": "Falta el núcleo resonador. La pieza que hará que todo... 'gire'. Costará casi la totalidad de su tesorería real. Sé que es una locura, pero confíe en mí.",
+      "opcion_1": {
+        "texto": "Vacía las bóvedas. Termínala.",
+        "efecto": {"e": 0, "t": -50, "p": -20, "c": 0},
+        "accion": "activar_final_falso"
+      },
+      "opcion_2": {
+        "texto": "No iré a la quiebra por ti.",
+        "efecto": {"e": 0, "t": 10, "p": 10, "c": 0}
+      }
+    }
+  ],
+
+"secuencias_finales": [
+    {
+      "id": "fin_fal_1",
+      "personaje": "Lucien",
+      "texto": "Lucien irrumpe en la sala del trono sin capucha, su rostro está lleno de engranajes. 'No soy un ingeniero, Zacarías. Soy un crono-viajero. La máquina del tiempo está lista. Muralia está condenada. Ven conmigo'.",
+      "opcion_1": {
+        "texto": "¿Viajar en el tiempo? Guíame.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_fal_2"
+      },
+      "opcion_2": {
+        "texto": "Muéstrame esa máquina.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_fal_2"
+      }
+    },
+    {
+      "id": "fin_fal_2",
+      "personaje": "Sistema",
+      "texto": "Bajas a las catacumbas. Tus cuatro príncipes miran asombrados una cápsula de metal gigante que zumba con el aceite de ballena. Lucien empaca muestras fósiles como 'evidencia'.",
+      "opcion_1": {
+        "texto": "Enciende los motores, Lucien.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_fal_3"
+      },
+      "opcion_2": {
+        "texto": "Sácanos de aquí.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_fal_3"
+      }
+    },
+    {
+      "id": "fin_fal_3",
+      "personaje": "Sistema",
+      "texto": "Un destello ciego te arranca los sentidos. La realidad se desgarra, los bloques de piedra se difuminan. Dejamos el castillo atrás y saltamos siglos hacia adelante.",
+      "opcion_1": {
+        "texto": "Abrir los ojos.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_fal_4"
+      },
+      "opcion_2": {
+        "texto": "Contemplar el nuevo mundo.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_fal_4"
+      }
+    },
+    {
+      "id": "fin_fal_4",
+      "personaje": "Sistema",
+      "texto": "Aparecen en una megaciudad de cromo, humo y chimeneas altísimas. Vehículos de latón vuelan por los cielos. Has escapado de la destrucción de tu mundo...",
+      "opcion_1": {
+        "texto": "Es... hermoso.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_fal_5"
+      },
+      "opcion_2": {
+        "texto": "Lo logramos, Lucien.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_fal_5"
+      }
+    },
+    {
+      "id": "fin_fal_5",
+      "personaje": "Sistema",
+      "texto": "Pero el cielo está en llamas. Tres figuras gigantescas e insondables (los Ermitaños) están destrozando el tejido de este futuro. Lucien cae de rodillas, llorando. 'No... el incidente... no pude evitarlo'.",
+      "opcion_1": {
+        "texto": "...",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_fal_6"
+      },
+      "opcion_2": {
+        "texto": "Dioses míos...",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_fal_6"
+      }
+    },
+    {
+      "id": "fin_fal_6",
+      "personaje": "Sistema",
+      "texto": "Escapaste del fin de tu época primitiva, solo para aterrizar en el apocalipsis absoluto del futuro Steampunk. Mueres aplastado por engranajes ardientes. No hay escapatoria del destino.",
+      "opcion_1": {
+        "texto": "Fin del Juego (Final Falso)",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "game_over_falso"
+      },
+      "opcion_2": {
+        "texto": "El Tiempo no perdona.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "game_over_falso"
+      }
+    },
+    {
+      "id": "fin_luc_1",
+      "personaje": "Lucas",
+      "texto": "El salón del trono se congela de golpe. Una figura levita frente a ti con cabello blanco flotando por la estática mágica. Es Lucas, el Hechicero Loco.",
+      "opcion_1": {
+        "texto": "¿Quién osa entrar a mi corte?",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_luc_2"
+      },
+      "opcion_2": {
+        "texto": "¡Guardias, a mí!",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_luc_2"
+      }
+    },
+    {
+      "id": "fin_luc_2",
+      "personaje": "Lucas",
+      "texto": "Mis discípulos solo querían ayudar a este patético mundo de bloques. Líbero, Pisciero, Gem-Isis... ofrecieron sus dones y los mutilaste y encerraste. Eres un rey ingrato, Zacarías.",
+      "opcion_1": {
+        "texto": "Eran monstruos peligrosos.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_luc_3"
+      },
+      "opcion_2": {
+        "texto": "¡Mátenlo ahora mismo!",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_luc_3"
+      }
+    },
+    {
+      "id": "fin_luc_3",
+      "personaje": "Lucas",
+      "texto": "Tus guardias se convierten en polvo brillante. Lucas levanta una mano. Sientes un dolor inimaginable. Tu carne se vuelve madera tallada y piedra fría. Te estás fusionando con tu trono.",
+      "opcion_1": {
+        "texto": "¡No! ¡Detente!",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_luc_4"
+      },
+      "opcion_2": {
+        "texto": "¡Acro, ayúdame!",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_luc_4"
+      }
+    },
+    {
+      "id": "fin_luc_4",
+      "personaje": "Sistema",
+      "texto": "Atrapado como un objeto inanimado, sin voz ni movimiento, ves cómo la carne de Lucas se amolda hasta verse exactamente igual a ti. Recoge tu corona del suelo y se sienta sobre ti.",
+      "opcion_1": {
+        "texto": "...",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_luc_5"
+      },
+      "opcion_2": {
+        "texto": "(Gritas en silencio)",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_luc_5"
+      }
+    },
+    {
+      "id": "fin_luc_5",
+      "personaje": "Lucas",
+      "texto": "Lucas sonríe con tu rostro. 'Yo gobernaré North ahora. Yo dominaré este mundo. Y tú, verdadero Zacarías, serás mi asiento por toda la eternidad'. La oscuridad te traga.",
+      "opcion_1": {
+        "texto": "Fin del Juego (Dominación)",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "game_over_lucas"
+      },
+      "opcion_2": {
+        "texto": "Maldito seas...",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "game_over_lucas"
+      }
+    },
+    {
+      "id": "fin_ver_1",
+      "personaje": "Sistema",
+      "texto": "Garret y Jim subieron al Leviatán de Hierro principal. Con el Atlas Absoluto en sus manos, prometieron cartografiar las regiones inexploradas y llevar el nombre de la familia más allá del mar.",
+      "opcion_1": {
+        "texto": "Que los astros los guíen.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_ver_2"
+      },
+      "opcion_2": {
+        "texto": "Hijos de North.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_ver_2"
+      }
+    },
+    {
+      "id": "fin_ver_2",
+      "personaje": "Sistema",
+      "texto": "Hans y su Orden del Horizonte marcharon hacia lo desconocido, sostenidos por las inagotables Raciones Eternas de Fred. Zarparon para asegurar que el legado norio jamás perezca.",
+      "opcion_1": {
+        "texto": "Mi legado vivirá.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_ver_3"
+      },
+      "opcion_2": {
+        "texto": "El mundo nos conocerá.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_ver_3"
+      }
+    },
+    {
+      "id": "fin_ver_3",
+      "personaje": "Sistema",
+      "texto": "Los barcos desaparecen en la niebla. Sientes paz... Pero de pronto, el cielo de Muralia se agrieta con una luz primordial ensordecedora. La realidad cúbica pierde su forma y colapsa sobre ti.",
+      "opcion_1": {
+        "texto": "...",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_ver_4"
+      },
+      "opcion_2": {
+        "texto": "¿Qué está pasando?",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "siguiente_final_ver_4"
+      }
+    },
+    {
+      "id": "fin_ver_4",
+      "personaje": "Sistema",
+      "texto": "Tus ojos se abren de golpe. Ya no estás en North. Huele a azufre y metal hirviendo. Tu cuerpo no se siente humano y las paredes de tu trono parecen latir. Bienvenido al Infierno, Zacarías.",
+      "opcion_1": {
+        "texto": "Fin del Juego (Victoria Verdadera)",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "victoria_verdadera"
+      },
+      "opcion_2": {
+        "texto": "¿Dónde... estoy?",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "victoria_verdadera"
+      }
+    }
+  ]
 }
