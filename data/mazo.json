@@ -2229,6 +2229,21 @@
         "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
         "accion": "victoria_verdadera"
       }
+    },
+{
+      "id": "fin_vacio",
+      "personaje": "Sistema",
+      "texto": "Han pasado diez años. No lograste expandir tu reino a tiempo. El cielo se quiebra en un silencio sepulcral. La realidad cúbica de Muralia pierde su cohesión y el Vacío Absoluto devora tu castillo, tu gente y a ti. No queda nada.",
+      "opcion_1": {
+        "texto": "Fin del Juego (Se acabó el tiempo)",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "game_over_vacio"
+      },
+      "opcion_2": {
+        "texto": "Todo fue en vano...",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0},
+        "accion": "game_over_vacio"
+      }
     }
   ]
 }
