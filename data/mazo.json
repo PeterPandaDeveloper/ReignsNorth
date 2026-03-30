@@ -1,0 +1,511 @@
+{
+  "tutorial": [
+    {
+      "id": "tut_1",
+      "personaje": "Sistema",
+      "texto": "Yaces sentado en el trono que has creado. La puerta de madera pesada se abre y entra tu hermano mayor, Acro.",
+      "opcion_1": {
+        "texto": "Escucharle (Izquierda)",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "continuar"}
+      },
+      "opcion_2": {
+        "texto": "Hacerle un gesto (Derecha)",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "continuar"}
+      }
+    },
+    {
+      "id": "tut_2",
+      "personaje": "Acro",
+      "texto": "Siempre te despiertas temprano para servir al reino... ¿Necesitas que te recuerde cómo mantener el equilibrio de los poderes antes de empezar?",
+      "opcion_1": {
+        "texto": "Sí, recuérdamelo.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "continuar"}
+      },
+      "opcion_2": {
+        "texto": "Está todo bien, Acro. (Saltar)",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "saltar_tutorial"}
+      }
+    },
+    {
+      "id": "tut_3",
+      "personaje": "Acro",
+      "texto": "Bien. Mantén Ejército, Tesoro, Pueblo y Diplomacia en equilibrio. Si uno llega a cero, o se llena al máximo, lo perderás todo. Vendré a verte cada trimestre con reportes graves. Que los astros te guíen.",
+      "opcion_1": {
+        "texto": "Que comience mi reinado.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "continuar"}
+      },
+      "opcion_2": {
+        "texto": "Estoy listo.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": 0, "accion": "continuar"}
+      }
+    }
+  ],
+
+  "eventos_genericos": [
+    {
+      "id": "gen_1",
+      "personaje": "Campesina",
+      "texto": "Mi'lord, la plaga d'escarabajos de lodo ha arruina'o el trigo. Pasaremos mucha hambre este invierno, pos sí.",
+      "opcion_1": {
+        "texto": "Abrir los graneros reales.",
+        "efecto": {"e": 0, "t": -15, "p": 15, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Que coman lodo.",
+        "efecto": {"e": 0, "t": 0, "p": -15, "c": 0}
+      }
+    },
+    {
+      "id": "gen_2",
+      "personaje": "Mercader",
+      "texto": "He traído sedas de tierras muy lejanas, Rey Zacarías. Si me permite venderlas sin pagar aduanas, le daré un generoso 'regalo' personal.",
+      "opcion_1": {
+        "texto": "Acepto el trato.",
+        "efecto": {"e": 0, "t": 20, "p": -10, "c": -10}
+      },
+      "opcion_2": {
+        "texto": "Paga tus impuestos.",
+        "efecto": {"e": 0, "t": -10, "p": 0, "c": 15}
+      }
+    },
+    {
+      "id": "gen_3",
+      "personaje": "LLeah Klar",
+      "texto": "Las armaduras de la guardia se están oxidando por la humedad del Arroyo de Jade. Necesitamos fondos para encargar acero nuevo en la forja.",
+      "opcion_1": {
+        "texto": "Forjen acero nuevo.",
+        "efecto": {"e": 15, "t": -15, "p": 0, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Peleen con lo que hay.",
+        "efecto": {"e": -15, "t": 0, "p": -10, "c": 0}
+      }
+    },
+    {
+      "id": "gen_4",
+      "personaje": "Ian el lavandero",
+      "texto": "¡Mi'rey! Taba lavando sus sábanas reales y m'encontré esta moneda grandota extranjera entre la tela. ¿Es suya?",
+      "opcion_1": {
+        "texto": "Dámela.",
+        "efecto": {"e": 0, "t": 10, "p": -10, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Quédatela por tu honestidad.",
+        "efecto": {"e": 0, "t": -5, "p": 15, "c": 0}
+      }
+    },
+    {
+      "id": "gen_5",
+      "personaje": "Matrona Mitriel",
+      "texto": "Rey Zacarías, los príncipes rompieron un jarrón diplomático invaluable jugando a las espadas. Los embajadores lo notarán pronto.",
+      "opcion_1": {
+        "texto": "Cúbrelos y paga el silencio.",
+        "efecto": {"e": 0, "t": -15, "p": 10, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Envía una disculpa oficial.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": -15}
+      }
+    },
+
+{
+      "id": "gen_6",
+      "personaje": "Lord Feudal bueno",
+      "texto": "Mi rey, mis tierras han prosperado este trimestre. Quiero donar una parte de mis ganancias de piedra labrada para reforzar North.",
+      "opcion_1": {
+        "texto": "Úsalo para las murallas.",
+        "efecto": {"e": 15, "t": 10, "p": 0, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Úsalo para tu pueblo.",
+        "efecto": {"e": 0, "t": 0, "p": 15, "c": 10}
+      }
+    },
+    {
+      "id": "gen_7",
+      "personaje": "Lord Feudal malo",
+      "texto": "Sus patrullas exigen demasiado peaje en mis puentes pantanosos. Si no retira a sus soldados, dejaré de enviar tributos a la corona.",
+      "opcion_1": {
+        "texto": "Retirar las patrullas.",
+        "efecto": {"e": -15, "t": 0, "p": 0, "c": 15}
+      },
+      "opcion_2": {
+        "texto": "¡Oblígalo a pagar!",
+        "efecto": {"e": 0, "t": 15, "p": 0, "c": -20}
+      }
+    },
+    {
+      "id": "gen_8",
+      "personaje": "Cuervo",
+      "texto": "(El ave negra entra volando, deja caer un pergamino manchado de sangre en tu regazo y grazna violentamente).",
+      "opcion_1": {
+        "texto": "Leer el mensaje.",
+        "efecto": {"e": -10, "t": 0, "p": -10, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Quemarlo sin abrir.",
+        "efecto": {"e": 0, "t": 0, "p": 0, "c": -15}
+      }
+    },
+    {
+      "id": "gen_9",
+      "personaje": "Cuervo blanco",
+      "texto": "(El ave se posa majestuosamente en tu trono. Trae un pequeño saco atado a la pata que tintinea al moverse).",
+      "opcion_1": {
+        "texto": "Tomar el oro real.",
+        "efecto": {"e": 0, "t": 15, "p": 0, "c": 10}
+      },
+      "opcion_2": {
+        "texto": "Repartirlo a las tropas.",
+        "efecto": {"e": 15, "t": -5, "p": 0, "c": 0}
+      }
+    },
+    {
+      "id": "gen_10",
+      "personaje": "Halcón",
+      "texto": "(Tus cazadores interceptaron este halcón mensajero de Crisol. Lleva un mapa con las rutas de los mercenarios enemigos).",
+      "opcion_1": {
+        "texto": "Usar la información para emboscar.",
+        "efecto": {"e": 20, "t": 0, "p": 0, "c": -15}
+      },
+      "opcion_2": {
+        "texto": "Vender el mapa en el bajo mundo.",
+        "efecto": {"e": -10, "t": 15, "p": 0, "c": 0}
+      }
+    },
+    {
+      "id": "gen_11",
+      "personaje": "Encapuchado A",
+      "texto": "Las estrellas dictan que Muralia necesita una purga. Entrégueme cien bloques de oro para apaciguar al cosmos, o sufrirán.",
+      "opcion_1": {
+        "texto": "¡A los calabozos!",
+        "efecto": {"e": 10, "t": 0, "p": -15, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Toma el oro y vete.",
+        "efecto": {"e": 0, "t": -20, "p": 15, "c": 0}
+      }
+    },
+    {
+      "id": "gen_12",
+      "personaje": "Encapuchado B",
+      "texto": "Rey de bloques, traigo raíces exóticas del desierto. Dan fuerza monstruosa a los soldados, pero los vuelve agresivos con los civiles.",
+      "opcion_1": {
+        "texto": "Compra las raíces.",
+        "efecto": {"e": 20, "t": -10, "p": -15, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Quémalo todo.",
+        "efecto": {"e": -10, "t": 0, "p": 15, "c": 0}
+      }
+    },
+    {
+      "id": "gen_13",
+      "personaje": "Campesina",
+      "texto": "Ha si'o un año mu' duro, Mi'lord. ¿Pos nos dejaría hacer el Festival de las Amapolas? Levantaría los ánimos, aunque cueste su dinerito.",
+      "opcion_1": {
+        "texto": "Que comience la fiesta.",
+        "efecto": {"e": 0, "t": -15, "p": 20, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "No hay oro para bailes.",
+        "efecto": {"e": 0, "t": 10, "p": -20, "c": 0}
+      }
+    },
+    {
+      "id": "gen_14",
+      "personaje": "Caballero",
+      "texto": "Los reclutas están aburridos y causan peleas en las tabernas. Deberíamos organizar un torneo de justas para que liberen tensión.",
+      "opcion_1": {
+        "texto": "Preparen las lanzas.",
+        "efecto": {"e": 15, "t": -20, "p": 0, "c": 15}
+      },
+      "opcion_2": {
+        "texto": "Ponlos a picar piedra.",
+        "efecto": {"e": -15, "t": 0, "p": 10, "c": 0}
+      }
+    },
+    {
+      "id": "gen_15",
+      "personaje": "Mercader",
+      "texto": "Tengo el monopolio de la sal en el Litoral en Espiral. Invierta en mi caravana hoy, y le devolveré el doble en unos meses.",
+      "opcion_1": {
+        "texto": "Confío en ti.",
+        "efecto": {"e": 0, "t": -20, "p": 0, "c": 10}
+      },
+      "opcion_2": {
+        "texto": "Los reyes no apuestan.",
+        "efecto": {"e": 0, "t": 5, "p": 0, "c": -10}
+      }
+    },
+    {
+      "id": "gen_16",
+      "personaje": "Ian el lavandero",
+      "texto": "Mi'lord, pos recogiendo las sábanas del embajador pa' lavarlas, vi que tenía unos pergaminos con los dibujos de las murallas. Mu' sospechoso.",
+      "opcion_1": {
+        "texto": "Enciérrenlo de inmediato.",
+        "efecto": {"e": 15, "t": 0, "p": 0, "c": -20}
+      },
+      "opcion_2": {
+        "texto": "Quema los planos en secreto.",
+        "efecto": {"e": -10, "t": 0, "p": 0, "c": 15}
+      }
+    },
+    {
+      "id": "gen_17",
+      "personaje": "Lord Feudal bueno",
+      "texto": "Mi rey, mis molinos han superado la cuota este mes. Le ofrezco los excedentes para alimentar a sus tropas.",
+      "opcion_1": {
+        "texto": "Las tropas comerán bien.",
+        "efecto": {"e": 15, "t": 0, "p": -5, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Repártelo entre los pobres.",
+        "efecto": {"e": -5, "t": 0, "p": 15, "c": 0}
+      }
+    },
+    {
+      "id": "gen_18",
+      "personaje": "Lord Feudal malo",
+      "texto": "No pienso enviar reclutas de mi feudo para sus murallas este año. Mis campos me necesitan más que su paranoia de guerra.",
+      "opcion_1": {
+        "texto": "Arresten al traidor.",
+        "efecto": {"e": 15, "t": 0, "p": -15, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Contrata mercenarios en su lugar.",
+        "efecto": {"e": 0, "t": -20, "p": 0, "c": -10}
+      }
+    },
+    {
+      "id": "gen_19",
+      "personaje": "Matrona Mitriel",
+      "texto": "Zacarías, las bodegas reales están infestadas de ratas y los gatos no dan abasto. Debemos llamar a exterminadores profesionales.",
+      "opcion_1": {
+        "texto": "Págales, salva la comida.",
+        "efecto": {"e": 0, "t": -15, "p": 10, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Que los guardias las cacen con lanzas.",
+        "efecto": {"e": -15, "t": 0, "p": -10, "c": 0}
+      }
+    },
+    {
+      "id": "gen_20",
+      "personaje": "Cuervo",
+      "texto": "(El cuervo se estrella contra la ventana del trono y cae muerto. Su pico está misteriosamente lleno de arena blanca del desierto).",
+      "opcion_1": {
+        "texto": "Un mal presagio, reforzar defensas.",
+        "efecto": {"e": 15, "t": -15, "p": 0, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Dáselo a los perros.",
+        "efecto": {"e": 0, "t": 0, "p": -10, "c": 0}
+      }
+    }
+{
+      "id": "gen_21",
+      "personaje": "Caballero",
+      "texto": "Hemos capturado a un desertor de La Corona Pálida. Ofrece contarnos sus secretos si le perdonamos la vida y le damos oro.",
+      "opcion_1": {
+        "texto": "Págale y que hable.",
+        "efecto": {"e": 15, "t": -15, "p": 0, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Ejecútenlo por escoria.",
+        "efecto": {"e": 0, "t": 0, "p": 10, "c": -10}
+      }
+    },
+    {
+      "id": "gen_22",
+      "personaje": "Mercader",
+      "texto": "La ruta por el Paso del Ermitaño está plagada de ladrones. Mis caravanas no pasarán a menos que envíe escolta militar.",
+      "opcion_1": {
+        "texto": "Enviar la escolta.",
+        "efecto": {"e": -15, "t": 15, "p": 0, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Que busquen otra ruta.",
+        "efecto": {"e": 0, "t": -15, "p": 0, "c": -15}
+      }
+    },
+    {
+      "id": "gen_23",
+      "personaje": "Campesina",
+      "texto": "¡Mi'lord! ¡Un bicho feo anda rondando los bosques! S'ha comi'o tres de mis vacas. ¡Mande a los caballeros, por lo que más quiera!",
+      "opcion_1": {
+        "texto": "Enviar una partida de caza.",
+        "efecto": {"e": -15, "t": 0, "p": 20, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Son solo lobos, no molestes.",
+        "efecto": {"e": 0, "t": 0, "p": -20, "c": 0}
+      }
+    },
+    {
+      "id": "gen_24",
+      "personaje": "Ian el lavandero",
+      "texto": "Mi'señor, sus túnicas tan to'as rotas por el roce de la piedra. Necesita ropita nueva pa' que los de afuera lo respeten.",
+      "opcion_1": {
+        "texto": "Encarga seda de la mejor.",
+        "efecto": {"e": 0, "t": -15, "p": 0, "c": 15}
+      },
+      "opcion_2": {
+        "texto": "Cóselas, el reino tiene prioridades.",
+        "efecto": {"e": 0, "t": 0, "p": 15, "c": -15}
+      }
+    },
+    {
+      "id": "gen_25",
+      "personaje": "Matrona Mitriel",
+      "texto": "Haciendo una limpieza profunda en los pasillos inferiores encontré una pared falsa. Detrás hay cofres llenos de oro antiguo sin marcar.",
+      "opcion_1": {
+        "texto": "Llévalo al tesoro real.",
+        "efecto": {"e": -15, "t": 20, "p": 0, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Repártelo entre el servicio.",
+        "efecto": {"e": 0, "t": -15, "p": 20, "c": 0}
+      }
+    },
+    {
+      "id": "gen_26",
+      "personaje": "Campesina",
+      "texto": "Mi'lord, pos arando la tierra pa' la siembra m'encontrao una estatua rara de piedra negra. Los muchachos le agarraron fe y quieren hacerle un altarcito.",
+      "opcion_1": {
+        "texto": "Permitir el santuario.",
+        "efecto": {"e": 0, "t": 0, "p": 15, "c": -15}
+      },
+      "opcion_2": {
+        "texto": "¡Destruyan esa herejía!",
+        "efecto": {"e": 0, "t": 0, "p": -15, "c": 10}
+      }
+    },
+    {
+      "id": "gen_27",
+      "personaje": "Ian el lavandero",
+      "texto": "¡Mi'rey! Bajé al calabozo por la ropa sucia y vi a los guardias apostando sus espadas y cascos a los dados. ¿Les digo alguito o me callo?",
+      "opcion_1": {
+        "texto": "Castígalos y confisca el oro.",
+        "efecto": {"e": -15, "t": 15, "p": 0, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Déjalos, necesitan divertirse.",
+        "efecto": {"e": 10, "t": 0, "p": 0, "c": -10}
+      }
+    },
+    {
+      "id": "gen_28",
+      "personaje": "Mercader",
+      "texto": "Tengo una oferta irrechazable. Compraré absolutamente toda la leña de sus bosques este invierno. El pueblo pasará un poco de frío, pero su bóveda reventará de monedas.",
+      "opcion_1": {
+        "texto": "El oro manda, véndela.",
+        "efecto": {"e": 0, "t": 20, "p": -20, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Mi gente necesita calor, lárgate.",
+        "efecto": {"e": 0, "t": -10, "p": 15, "c": 0}
+      }
+    },
+    {
+      "id": "gen_29",
+      "personaje": "Caballero",
+      "texto": "Nuestras filas merman por las enfermedades del pantano, majestad. Solicito permiso de la corona para reclutar por la fuerza a los jóvenes de las aldeas cercanas.",
+      "opcion_1": {
+        "texto": "Oblígalos a marchar.",
+        "efecto": {"e": 20, "t": 0, "p": -20, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "La guardia debe ser voluntaria.",
+        "efecto": {"e": -15, "t": 0, "p": 15, "c": 0}
+      }
+    },
+    {
+      "id": "gen_30",
+      "personaje": "Lord Feudal bueno",
+      "texto": "Han llegado refugiados esqueléticos huyendo de los horrores del Exilio. Piden asilo y tierras. Yo cubriré la mitad de sus gastos si usted pone la otra mitad.",
+      "opcion_1": {
+        "texto": "Bienvenidos a North.",
+        "efecto": {"e": 0, "t": -15, "p": 15, "c": 10}
+      },
+      "opcion_2": {
+        "texto": "Cierren las fronteras, no hay espacio.",
+        "efecto": {"e": 10, "t": 0, "p": -10, "c": -10}
+      }
+    },
+    {
+      "id": "gen_31",
+      "personaje": "Lord Feudal malo",
+      "texto": "Mis campesinos se han vuelto perezosos y lentos. Si me permite usar los látigos para la época de cosecha, le enviaré el doble de trigo este mismo mes.",
+      "opcion_1": {
+        "texto": "Haz lo que debas para cumplir.",
+        "efecto": {"e": 0, "t": 15, "p": -20, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Trátalos con respeto, salvaje.",
+        "efecto": {"e": 0, "t": -10, "p": 15, "c": -10}
+      }
+    },
+    {
+      "id": "gen_32",
+      "personaje": "Cuervo",
+      "texto": "(El cuervo negro aterriza violentamente en el respaldo de tu trono. Trae una daga oxidada clavada en un trapo asqueroso con los colores de La Corona Pálida).",
+      "opcion_1": {
+        "texto": "Es una amenaza. ¡Movilizar tropas!",
+        "efecto": {"e": 15, "t": -15, "p": 0, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Es solo intimidación, ignóralo.",
+        "efecto": {"e": -10, "t": 0, "p": -10, "c": 0}
+      }
+    },
+    {
+      "id": "gen_33",
+      "personaje": "Cuervo blanco",
+      "texto": "(El majestuoso cuervo blanco entra volando y deja caer una brillante esmeralda tallada en tu mano. Es un regalo de buena voluntad de la luminosa Cueva de Cristal).",
+      "opcion_1": {
+        "texto": "Véndela en secreto para el reino.",
+        "efecto": {"e": 0, "t": 15, "p": 0, "c": -15}
+      },
+      "opcion_2": {
+        "texto": "Exhíbela con orgullo en el salón.",
+        "efecto": {"e": 0, "t": 0, "p": 10, "c": 15}
+      }
+    },
+    {
+      "id": "gen_34",
+      "personaje": "Encapuchado A",
+      "texto": "Una lluvia de estrellas se acerca. Le exijo que construya un obelisco de cuarzo macizo en el centro de la plaza para desviar la ira de los astros.",
+      "opcion_1": {
+        "texto": "Construye el obelisco por si acaso.",
+        "efecto": {"e": 0, "t": -20, "p": 15, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Echadlo a patadas de mi vista.",
+        "efecto": {"e": 0, "t": 0, "p": -10, "c": 10}
+      }
+    },
+    {
+      "id": "gen_35",
+      "personaje": "Matrona Mitriel",
+      "texto": "Rey Zacarías, los cocineros del castillo amenazan con hacer huelga. Dicen que trabajar con hornos de piedra vieja es inhumano y exigen que compremos hornos de cristal forjado.",
+      "opcion_1": {
+        "texto": "Cómprales sus caprichos.",
+        "efecto": {"e": 0, "t": -15, "p": 15, "c": 0}
+      },
+      "opcion_2": {
+        "texto": "Que cocinen o se vayan a la calle.",
+        "efecto": {"e": 0, "t": 0, "p": -15, "c": 10}
+      }
+    }
+  ],
+  "eventos_acro": [],
+  "desastres_mayores": [],
+  "resoluciones_aves": [],
+  "eventos_aves": [],
+  "visitas_aliados": [],
+  "eventos_consejo": [],
+  "arcos_principes": [],
+  "eventos_discipulos": [],
+  "secuencias_finales": []
+}
